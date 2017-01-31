@@ -30,7 +30,7 @@ const config = module.exports = {
   },
   plugins: plugins,
   performance: {
-    hints: true
+    hints: false
   },
   devServer: {
     proxy: {
