@@ -1,0 +1,22 @@
+{
+    "compilerOptions": {
+        "module": "es2015",
+        "target": "es5",
+        "moduleResolution": "node",
+        "noImplicitAny": false,
+        "sourceMap": false,
+        "jsx": "react",
+        "lib": ["dom", "es2015"],
+        "experimentalDecorators": true,
+        "baseUrl": ".",
+        "paths": {
+            "*":[
+                "src/*",
+                "node_modules/*"
+            ]
+        }
+    },
+    "include": [
+        "./src/**/*"
+    ]
+}
