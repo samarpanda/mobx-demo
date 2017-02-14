@@ -1,9 +1,12 @@
 import * as React from 'react'
 import {Provider} from 'mobx-react'
+
 import appState from './AppState'
+import userState from './user/UserState'
 
 let stores = {
-  appState
+  appState,
+  userState
 }
 
 class App extends React.Component<void, void>{

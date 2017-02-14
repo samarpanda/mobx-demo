@@ -5,7 +5,7 @@ const publicPath = require('./package.json').publicPath;
 
 const config = module.exports = {
   entry: {
-    app: path.join(__dirname, 'src/index.tsx')
+    app: path.join(__dirname, 'client/index.tsx')
   },
   output: {
     filename: 'bundle.js',
@@ -15,7 +15,7 @@ const config = module.exports = {
   resolve: {
     extensions: ['.tsx', '.ts', '.js'],
     modules: [
-      'src/',
+      'client/',
       'node_modules/'
     ]
   },
@@ -34,7 +34,11 @@ const config = module.exports = {
   },
   devServer: {
     proxy: {
-
+      '/api/me':{
+        target: 'http://localhost:3000',
+        secure: false,
+        rewrite: req => req.url = req.url.replace(/^\/api\/me(.+)$/,'$1')
+      }
     },
     historyApiFallback:{
       index: publicPath

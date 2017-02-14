@@ -5,7 +5,7 @@ const publicPath = require('../package.json').publicPath || "";
 
 const basePlugins = [
   new HtmlWebpackPlugin({
-    template: './src/index.html',
+    template: './client/index.html',
     inject: 'body',
     hash: true,
     minify: !isProduction ? false : {
