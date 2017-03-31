@@ -26,7 +26,7 @@ class CreateUser extends React.Component<Props, void>{
     let {id, username, name} = this.props.userState.user;
     return <div>
       <form onSubmit={this.onSubmit} >
-      <label>Id</label><input id="id" type="text" value={id} onChange={this.onUpdate} /><br />  
+      <label>Id</label><input id="id" type="text" value={id} onChange={this.onUpdate} /><br />
       <label>Username</label><input id="username" type="text" value={username} onChange={this.onUpdate}/><br />
       <label>Name</label><input id="name" type="text" value={name} onChange={this.onUpdate}/><br />
       <input id="btn" type="submit" />

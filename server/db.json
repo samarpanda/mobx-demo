@@ -1,0 +1,29 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "samar",
+      "name": "sp"
+    },
+    {
+      "id": "2",
+      "name": "sp2",
+      "username": "samar2",
+      "apiId": "me"
+    },
+    {
+      "id": "3",
+      "name": "sp3",
+      "username": "samar3",
+      "apiId": "me"
+    }
+  ],
+  "ads": [
+    {
+      "title": "Add a blogpost about Angular2",
+      "dueDate": "2015-05-23T18:25:43.511Z",
+      "done": false,
+      "id": 1
+    }
+  ]
+}
